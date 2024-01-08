@@ -54,6 +54,19 @@ export default {
         <img class="logo" src="../assets/img/dc-logo-bg.png" alt=""> 
     </div>
     </footer>
+    <div class="footer-second-row">
+        <div class="container-button"><button>SING-UP NOW</button></div>
+        <div class="follow-us">
+            <ul>
+                <li><h2>FOLLOW-US</h2></li>
+                <li><img src="../assets/img/footer-facebook.png" alt=""></li>
+                <li><img src="../assets/img/footer-twitter.png" alt=""></li>
+                <li><img src="../assets/img/footer-youtube.png" alt=""></li>
+                <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
+                <li><img src="../assets/img/footer-periscope.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
 
 </template>
 
@@ -79,5 +92,42 @@ footer {
         display: flex;
         justify-content: end;
     }
+}
+
+.footer-second-row {
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        padding: 5px;
+    }
+}
+
+.follow-us {
+    display: flex;
+    color: rgb(0, 55, 255);
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+button {
+    border: 2px solid rgb(0, 55, 255);
+    padding: 5px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
 }
 </style>
