@@ -72,6 +72,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as*;
+
 header {
     display: flex;
     justify-content: center;
@@ -100,7 +102,7 @@ header {
         color: black;
 
         &.active {
-            color: rgb(0, 55, 255);
+            color: $blue_color;
             text-decoration: underline;
         }
 

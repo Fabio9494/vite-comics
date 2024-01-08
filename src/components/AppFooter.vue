@@ -71,6 +71,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as*;
+
 footer {
     background-image: url(../assets/img/footer-bg.jpg);
     display: flex;
@@ -78,6 +80,10 @@ footer {
     color: grey;
     font-size: 10px;
     padding: 20px 120px;
+
+    h2 {
+        color: white;
+    }
 
     ul {
         list-style: none;
@@ -113,7 +119,7 @@ footer {
 
 .follow-us {
     display: flex;
-    color: rgb(0, 55, 255);
+    color: $blue_color;
 }
 
 .container-button {
@@ -123,7 +129,7 @@ footer {
 }
 
 button {
-    border: 2px solid rgb(0, 55, 255);
+    border: solid 2px $blue_color;
     padding: 5px;
     background-color: rgb(55, 55, 55);
     color: white;
