@@ -90,6 +90,8 @@ export default {
 
 <template lang="">
     <main>
+        <div class="jumbotron"></div>
+        <div class="current-series">CURRENT SERIES</div>
         <div class="container">
             <div class="container-fumetti">
                 <CardFumetti v-for="fumetto,index in fumetti" :key="index" :fumetto="fumetto"/>
@@ -115,12 +117,31 @@ export default {
     background-color: black;
     justify-content: center;
     padding: 20px;
+    padding-top: 40px;
+
 }
 
 button {
     background-color: $blue_color;
     margin: 20px;
     width: 10%;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.jumbotron {
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 400px;
+    position: relative;
+}
+
+.current-series {
+    position: absolute;
+    left: 80px;
+    bottom: 150px;
+    background-color: $blue_color ;
+    padding: 10px;
     font-weight: bold;
     color: white;
 }
